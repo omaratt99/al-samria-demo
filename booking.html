@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<title>طلب موعد | مركز السامرية الطبي بجدة</title><meta name="description" content="اختر فرعك وعيادتك وأرسل طلب موعدك في مركز السامرية الطبي. أربعة حقول ولا تحتاج حسابًا."><meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#00BBB3"><meta property="og:type" content="website"><meta property="og:locale" content="ar_SA"><meta property="og:site_name" content="مركز السامرية الطبي"><meta property="og:title" content="طلب موعد | مركز السامرية الطبي بجدة"><meta property="og:description" content="اختر فرعك وعيادتك وأرسل طلب موعدك في مركز السامرية الطبي. أربعة حقول ولا تحتاج حسابًا.">
+<link rel="stylesheet" href="assets/css/base.css"><link rel="stylesheet" href="assets/css/booking-offer.css"><script id="site-config" type="application/json">{"demoMode": true, "bookingEndpoint": ""}</script><script src="assets/js/site.js" defer></script></head>
+<body data-page="booking"><a class="skip-link" href="#main">انتقل إلى المحتوى</a><header class="site-header site-header--simple container"><a class="brand" href="index.html" aria-label="مركز السامرية الطبي — الرئيسية">
+    <span class="brand-mark"><img src="assets/figma/02fefb69-dbf4-4744-b72a-a8a6fb985ac4.png" alt="" class="brand-source" data-figma-asset="home-header/imgOriginalLogoImageNativeCrop" width="2250" height="2250" decoding="async" loading="eager" aria-hidden="true"></span>
+    <span class="brand-copy"><strong>مركز السامرية الطبي</strong><span lang="en" dir="ltr">AL SAMRIA MEDICAL CENTER</span></span></a><button type="button" class="back-button" data-back aria-label="العودة إلى الصفحة السابقة"><img src="assets/figma/0a5d727a-eb51-4c93-a74a-47a67f170845.svg" alt="" class="" data-figma-asset="home-hero/imgSamriaCtaArrowLongThin" width="28" height="16" loading="lazy" decoding="async" aria-hidden="true" ></button></header>
+<main id="main" class="booking-page">
+  <div class="appointment-layout">
+    <section class="appointment-intro" aria-labelledby="appointment-title">
+      <p class="appointment-location"><img src="assets/figma/25c038b7-3cc4-4976-baa5-b96b5d60e7dc.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconPin" width="18" height="18" loading="lazy" decoding="async" aria-hidden="true" ><span>معك في ٣ فروع بجدة</span></p>
+      <h1 id="appointment-title">موعدك يبدأ <span>بخطوة بسيطة.</span></h1>
+      <p class="appointment-description">اختر فرعك وعيادتك، ونرتّب الموعد معك.</p>
+      <div class="appointment-next"><h2>بعد ما ترسل طلبك</h2><ol><li><span class="appointment-step-icon"><img src="assets/figma/7643d0b3-a1e1-4644-bf69-b28aa4691975.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconCalendar" width="22" height="22" loading="lazy" decoding="async" aria-hidden="true" ></span>
+      <div><h3>اختر ما يناسبك</h3><p>اختر الفرع والعيادة المناسبين لك.</p></div></li><li><span class="appointment-step-icon"><img src="assets/figma/60e4cb0b-3d6c-40c1-b08c-8a26069edb7f.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconPhone" width="22" height="22" loading="lazy" decoding="async" aria-hidden="true" ></span>
+      <div><h3>نتواصل معك</h3><p>نرتّب معك وقتًا يناسبك.</p></div></li><li><span class="appointment-step-icon"><img src="assets/figma/82803dfb-7451-4390-ba5b-a71004f2b844.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconCheck" width="22" height="22" loading="lazy" decoding="async" aria-hidden="true" ></span>
+      <div><h3>نؤكد الموعد معك</h3><p>نرسل لك تفاصيل زيارتك بعد التأكيد.</p></div></li></ol></div>
+      <div class="appointment-assistance"><p>تحتاج مساعدة في الحجز؟</p>
+        <a class="button button--whatsapp" href="https://wa.me/966920002024" target="_blank" rel="noopener noreferrer"><span>راسلنا على واتساب</span><img src="assets/figma/0a5d727a-eb51-4c93-a74a-47a67f170845.svg" alt="" class="button-arrow" data-figma-asset="home-hero/imgSamriaCtaArrowLongThin" width="28" height="16" loading="lazy" decoding="async" aria-hidden="true" ></a>
+      </div>
+    </section>
+    <form class="appointment-form" id="appointment-form" action="appointment-received.html" method="post" data-booking-form novalidate>
+      <div class="appointment-form-intro"><h2>طلب موعد</h2><p>أربعة حقول، ولا تحتاج حسابًا.</p></div>
+      <p class="booking-context" data-context-summary hidden></p>
+      <div class="appointment-fields"><div class="booking-field field field--name">
+      <label for="appointment-name">الاسم الكامل</label><input type="text" id="appointment-name" name="name" aria-describedby="appointment-name-error" data-error="اكتب اسم المريض من فضلك." required placeholder="اسم المريض" autocomplete="name" minlength="2" maxlength="100">
+      <p class="field-error" id="appointment-name-error" aria-live="polite" hidden>اكتب اسم المريض من فضلك.</p>
+    </div><div class="booking-field field field--phone">
+      <label for="appointment-phone">رقم الجوال</label><input type="tel" id="appointment-phone" name="phone" aria-describedby="appointment-phone-error" data-error="أضف رقم جوالك لنتواصل معك." required placeholder="05X XXX XXXX" inputmode="tel" autocomplete="tel" dir="ltr" maxlength="18">
+      <p class="field-error" id="appointment-phone-error" aria-live="polite" hidden>أضف رقم جوالك لنتواصل معك.</p>
+    </div><div class="booking-field field field--branch">
+      <label for="appointment-branch">الفرع</label><span class="booking-select-control"><select id="appointment-branch" name="branch" aria-describedby="appointment-branch-error" data-error="اختر الفرع الأنسب لك." required><option value="">اختر الفرع</option><option value="النسيم">النسيم</option><option value="المحمدية">المحمدية</option><option value="السامر">السامر</option></select><img src="assets/figma/0b4ad978-347c-4c34-853f-361fab4c770e.svg" alt="" class="booking-select-chevron" data-figma-asset="booking-desktop/imgIconChevron" width="16" height="16" loading="lazy" decoding="async" aria-hidden="true" ></span>
+      <p class="field-error" id="appointment-branch-error" aria-live="polite" hidden>اختر الفرع الأنسب لك.</p>
+    </div><div class="booking-field field field--clinic">
+      <label for="appointment-clinic">العيادة</label><span class="booking-select-control"><select id="appointment-clinic" name="clinic" aria-describedby="appointment-clinic-error" data-error="اختر العيادة، أو «لست متأكدًا»." required><option value="">اختر العيادة</option><option value="الطب العام">الطب العام</option><option value="النساء والولادة">النساء والولادة</option><option value="الجلدية والتجميل">الجلدية والتجميل</option><option value="الأسنان">الأسنان</option><option value="الأطفال">الأطفال</option><option value="الباطنة">الباطنة</option><option value="القلب">القلب</option><option value="العيون">العيون</option><option value="العظام">العظام</option><option value="الجراحة">الجراحة</option><option value="الأنف والأذن والحنجرة">الأنف والأذن والحنجرة</option><option value="المسالك البولية">المسالك البولية</option><option value="لست متأكدًا">لست متأكدًا</option></select><img src="assets/figma/0b4ad978-347c-4c34-853f-361fab4c770e.svg" alt="" class="booking-select-chevron" data-figma-asset="booking-desktop/imgIconChevron" width="16" height="16" loading="lazy" decoding="async" aria-hidden="true" ></span>
+      <p class="field-error" id="appointment-clinic-error" aria-live="polite" hidden>اختر العيادة، أو «لست متأكدًا».</p>
+    </div></div>
+      <details class="appointment-timing"><summary><img src="assets/figma/a3459322-6e5b-47d0-8b5c-636f7da34545.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconPlus" width="18" height="18" loading="lazy" decoding="async" aria-hidden="true" ><span>وقت يناسبك (اختياري)</span></summary>
+        <div class="appointment-timing-fields">
+          <div class="booking-field"><label for="appointment-day">اليوم المناسب</label><input id="appointment-day" type="date" name="day" aria-describedby="appointment-day-error" data-error="اختر تاريخ اليوم أو يومًا لاحقًا."><p class="field-error" id="appointment-day-error" aria-live="polite" hidden></p></div>
+          <div class="booking-field"><label for="appointment-period">الفترة المناسبة</label><select id="appointment-period" name="period"><option value="">أي وقت يناسبني</option><option value="morning">صباحًا</option><option value="evening">مساءً</option></select></div>
+        </div>
+      </details>
+      <div class="appointment-submit-desktop"><button  class="button button--primary" type="submit"><span>أرسل طلب الموعد</span><img src="assets/figma/0a5d727a-eb51-4c93-a74a-47a67f170845.svg" alt="" class="button-arrow" data-figma-asset="home-hero/imgSamriaCtaArrowLongThin" width="28" height="16" loading="lazy" decoding="async" aria-hidden="true" ></button>
+        <p>نتواصل معك لترتيب الموعد وتأكيده.</p>
+        <p class="appointment-privacy"><img src="assets/figma/9e528a33-57fa-4c9d-9b6d-371bdf9bc472.svg" alt="" class="" data-figma-asset="booking-desktop/imgIconShield" width="16" height="16" loading="lazy" decoding="async" aria-hidden="true" ><span>نستخدم بياناتك لتنسيق الموعد والتواصل معك.</span></p>
+      </div>
+      <a class="appointment-mobile-help" href="https://wa.me/966920002024" target="_blank" rel="noopener noreferrer"><span>تحتاج مساعدة؟ راسلنا</span><img src="assets/figma/c600edca-6ddd-4ea1-af60-67bdb17608a5.svg" alt="" class="" data-figma-asset="booking-mobile/imgDirectionSlim1" width="28" height="16" loading="lazy" decoding="async" aria-hidden="true" ></a>
+      <p class="form-status" role="status" aria-live="polite" hidden></p>
+      <noscript><p>فعّل JavaScript لتجربة إرسال هذا النموذج، أو تواصل معنا عبر واتساب.</p></noscript>
+    </form>
+  </div>
+  <p class="appointment-footer">مركز السامرية الطبي · النسيم / المحمدية / السامر</p>
+  <div class="appointment-mobile-submit"><button  class="button button--primary" type="submit" form="appointment-form"><span>أرسل طلب الموعد</span><img src="assets/figma/0a5d727a-eb51-4c93-a74a-47a67f170845.svg" alt="" class="button-arrow" data-figma-asset="home-hero/imgSamriaCtaArrowLongThin" width="28" height="16" loading="lazy" decoding="async" aria-hidden="true" ></button></div>
+</main></body></html>

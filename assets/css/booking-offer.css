@@ -1,0 +1,154 @@
+/* Appointment and offer layouts translated from the final Figma frames. */
+.booking-page,.confirmation-page,.offer-page{color:var(--ink);text-align:right}
+.booking-page{padding:48px 24px 40px}
+.appointment-layout{display:grid;grid-template-columns:448fr 688fr;gap:80px;max-width:1216px;margin:auto;align-items:start}
+.appointment-intro{display:flex;flex-direction:column;gap:24px;min-width:0}
+.appointment-location{display:flex;align-items:center;gap:8px;color:var(--teal);font-size:12px;line-height:24px;margin:0}
+.appointment-location img{width:18px;height:18px;flex:0 0 18px}
+.appointment-intro h1{font-size:46px;line-height:68px;font-weight:700;margin:0}
+.appointment-intro h1 span{display:block}
+.appointment-description{font-size:18px;line-height:36px;color:var(--muted);margin:0}
+.appointment-next{padding-top:12px}
+.appointment-next h2{font-size:18px;line-height:30px;font-weight:700;margin:0 0 20px}
+.appointment-next ol{list-style:none;display:flex;flex-direction:column;gap:20px;padding:0;margin:0}
+.appointment-next li{display:flex;align-items:center;gap:16px}
+.appointment-step-icon{display:grid;place-items:center;background:var(--mint);width:48px;height:48px;border-radius:50%;flex:0 0 48px}
+.appointment-step-icon img{width:22px;height:22px}
+.appointment-next h3{font-size:14px;line-height:28px;font-weight:500;margin:0 0 4px}
+.appointment-next p{font-size:12px;line-height:24px;color:var(--muted);margin:0}
+.appointment-assistance{padding-top:16px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.appointment-assistance p{font-size:14px;line-height:28px;font-weight:500;margin:0}
+.appointment-assistance .button{width:236px;min-height:46px;height:46px}
+.appointment-form{min-width:0;display:flex;flex-direction:column;gap:24px;padding:32px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 8px 20px -12px #143c3614,inset 0 1px 1px #ffffffd9}
+.appointment-form-intro h2{font-size:24px;line-height:38px;margin:0 0 4px;font-weight:700}
+.appointment-form-intro p{font-size:12px;line-height:24px;color:var(--muted);margin:0}
+.appointment-fields{display:grid;grid-template-columns:1fr 1fr;gap:24px 16px}
+.booking-field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.booking-field label{font-size:14px;line-height:20px;font-weight:500;color:var(--ink);margin:0}
+.booking-field input,.booking-field select{box-sizing:border-box;width:100%;height:54px;min-width:0;border:1px solid #d9d9d9;border-radius:8px;padding:12px 16px;background:#fff;font:inherit;font-size:14px;line-height:24px;color:var(--ink);text-align:right}
+.booking-field input::placeholder{color:#757575;opacity:1}
+.booking-field input[type=tel]{text-align:left}
+.booking-field select{appearance:none;padding-left:40px;background-image:none}
+.booking-select-control{position:relative;display:block}
+.booking-select-chevron{position:absolute;left:16px;top:calc(50% - 8px);width:16px;height:16px;pointer-events:none}
+.booking-field input:focus,.booking-field select:focus{outline:2px solid var(--brand);outline-offset:2px}
+.booking-field input[aria-invalid=true],.booking-field select[aria-invalid=true]{border-color:#b3261e}
+.booking-field .field-error{color:#b3261e;font-size:12px;line-height:20px;margin:0}
+.booking-context{background:var(--pale);padding:10px 12px;border-radius:8px;font-size:12px;line-height:22px;margin:0}
+.appointment-timing{margin:0}
+.appointment-timing summary{display:flex;gap:8px;align-items:center;list-style:none;cursor:pointer;color:var(--teal);font-size:12px;line-height:24px;min-height:24px}
+.appointment-timing summary::-webkit-details-marker{display:none}
+.appointment-timing summary img{width:18px;height:18px;transition:transform .2s}
+.appointment-timing[open] summary img{transform:rotate(45deg)}
+.appointment-timing-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.appointment-submit-desktop{display:flex;flex-direction:column;gap:24px}
+.appointment-submit-desktop .button{width:100%}
+.appointment-submit-desktop p{font-size:12px;line-height:24px;margin:0;color:var(--muted)}
+.appointment-privacy{display:flex;gap:8px;align-items:center}
+.appointment-privacy img{width:16px;height:16px;flex:0 0 16px}
+.appointment-mobile-help,.appointment-mobile-submit{display:none}
+.appointment-footer{max-width:1216px;margin:48px auto 0;font-size:11px;line-height:18px;color:var(--muted)}
+.confirmation-page{padding:48px 24px 40px}
+.confirmation-card{box-sizing:border-box;max-width:688px;margin:auto;display:flex;flex-direction:column;align-items:flex-start;gap:24px;padding:48px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 8px 20px -12px #143c3614,inset 0 1px 1px #ffffffd9}
+.confirmation-check{width:64px;height:64px;display:grid;place-items:center;border-radius:50%;background:var(--mint)}
+.confirmation-check img{width:32px;height:32px}
+.confirmation-kicker{font-size:12px;line-height:24px;color:var(--teal);margin:0;width:100%}
+.confirmation-card h1{font-size:28px;line-height:42px;font-weight:700;margin:0;width:100%}
+.confirmation-copy{font-size:15px;line-height:30px;color:var(--muted);margin:0;width:100%}
+.confirmation-card .button{width:100%}
+.confirmation-card .button--whatsapp{min-height:46px;height:46px}
+.confirmation-edit{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:12px;line-height:24px;color:var(--teal);text-decoration:none;min-height:32px}
+.confirmation-edit img{width:28px;height:16px}
+.confirmation-demo-note{font-size:11px;line-height:20px;color:var(--muted);margin:-12px 0 0;padding:8px 12px;background:var(--pale);border-radius:8px;width:100%;box-sizing:border-box}
+.offer-page{display:flex;flex-direction:column;gap:32px;padding-top:32px;padding-bottom:48px}
+.offer-hero{display:grid;grid-template-columns:416fr 816fr;gap:48px;align-items:center;direction:ltr}
+.offer-provider{display:flex;flex-direction:column;height:440px;overflow:hidden;border-radius:24px;background:var(--pale);direction:rtl;min-width:0}
+.offer-portrait{height:344px;flex:0 0 344px;background:linear-gradient(to bottom,var(--canvas) 29%,#e5efe9 67%,#e0ede8);display:flex;justify-content:center}
+.offer-portrait img{height:100%;width:100%;object-fit:contain}
+.offer-provider-info{height:96px;box-sizing:border-box;padding:12px 24px;background:#fff;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.offer-provider-info .offer-provider-name{font-size:22px;line-height:32px;font-weight:600;margin:0;color:var(--ink)}
+.offer-provider-info>p{font-size:14px;line-height:24px;font-weight:500;color:var(--muted);margin:0}
+.offer-hero-copy{display:flex;flex-direction:column;gap:17px;min-width:0;direction:rtl;align-items:flex-start}
+.offer-kicker{margin:0}
+.offer-hero h1{font-size:46px;line-height:56px;font-weight:700;margin:0}
+.offer-hero h1 span{display:block}
+.offer-description{font-size:16px;line-height:28px;margin:0;color:var(--muted)}
+.offer-price{display:flex;align-items:center;gap:8px;margin:0;min-height:60px}
+.offer-price-value{font-size:48px;line-height:60px;font-weight:700;color:var(--ink)}
+.offer-price-unit{font-size:14px;line-height:24px;font-weight:500;color:var(--muted)}
+.offer-price--mobile{display:none!important}
+.offer-summary-caption{font-size:14px;line-height:24px;font-weight:500;margin:0}
+.offer-primary-cta{width:300px}
+.offer-booking{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px 32px;scroll-margin-top:24px}
+.offer-booking-intro h2{margin:0 0 6px}
+.offer-booking-intro p{font-size:14px;line-height:24px;margin:0;color:var(--muted)}
+.offer-booking-form{display:flex;flex-direction:column;gap:16px;margin-top:16px}
+.offer-booking-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.offer-booking-action{display:flex;flex-direction:row-reverse;align-items:center;gap:24px}
+.offer-booking-action .button{width:300px;flex:0 0 300px}
+.offer-booking-action p{font-size:12px;line-height:24px;margin:0;color:var(--muted);flex:1}
+.offer-inclusions{display:grid;grid-template-columns:416fr 832fr;gap:32px;align-items:start}
+.offer-section-intro{display:flex;flex-direction:column;gap:8px}
+.offer-section-intro .section-label{margin:0}
+.offer-section-subtitle{font-size:22px;line-height:34px;font-weight:700;margin:0;color:var(--ink)}
+.offer-section-intro>p:last-child{font-size:14px;line-height:26px;color:var(--muted);margin:0}
+.offer-included-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.offer-included-card{position:relative;overflow:hidden;min-width:0;min-height:180px;box-sizing:border-box;padding:24px;border:1px solid var(--line);border-radius:24px;background:#fff;display:flex;flex-direction:column;gap:8px}
+.offer-dental-icon{width:32px;height:32px;flex:none;position:relative;z-index:1}
+.offer-included-card h3{font-size:18px;line-height:28px;font-weight:700;margin:0;z-index:1}
+.offer-included-card p{font-size:14px;line-height:24px;color:var(--muted);margin:0;z-index:1}
+.offer-dental-watermark{position:absolute;left:-19px;bottom:-19px;width:120px;height:120px;pointer-events:none}
+.offer-journey{background:var(--pale);padding:24px;border-radius:24px;display:flex;flex-direction:column;gap:24px}
+.offer-journey h2{margin:0}
+.offer-journey ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.offer-journey li{display:flex;gap:16px;align-items:flex-start;min-width:0}
+.offer-step-number{display:grid;place-items:center;background:#fff;width:36px;height:36px;border-radius:50%;flex:0 0 36px;font-size:14px;line-height:24px;font-weight:700;color:var(--teal)}
+.offer-journey h3{font-size:17px;line-height:28px;font-weight:700;margin:0 0 4px}
+.offer-journey li p{font-size:13px;line-height:22px;color:var(--muted);margin:0}
+.offer-faq{display:grid;grid-template-columns:384fr 864fr;column-gap:32px;row-gap:16px;align-items:start}
+.offer-faq-intro{grid-column:1;grid-row:1}
+.offer-faq-intro h2{margin:0 0 16px}
+.offer-faq-intro p{font-size:16px;line-height:28px;color:var(--muted);margin:0}
+.offer-faq-list{grid-column:2;grid-row:1 / span 2;display:flex;flex-direction:column;gap:8px}
+.offer-final-cta{grid-column:1;width:300px;align-self:start}
+.offer-faq-item{border:1px solid var(--line);border-radius:20px;background:#fff;padding:24px}
+.offer-faq-item summary{min-height:48px;display:flex;align-items:center;gap:16px;list-style:none;cursor:pointer}
+.offer-faq-item summary::-webkit-details-marker{display:none}
+.offer-faq-item h3{font-size:18px;line-height:30px;font-weight:700;flex:1;margin:0}
+.offer-faq-item summary img{width:24px;height:24px;flex:none;vertical-align:middle}
+.offer-faq-item p{font-size:15px;line-height:28px;color:var(--muted);margin:12px 0 0}
+.offer-faq-minus{display:none}
+.offer-faq-item[open] .offer-faq-plus{display:none}
+.offer-faq-item[open] .offer-faq-minus{display:block}
+@media(max-width:1000px) and (min-width:701px){
+ .appointment-layout{gap:32px;grid-template-columns:1fr 1.3fr}.appointment-intro h1{font-size:36px;line-height:54px}.appointment-form{padding:24px}
+ .offer-hero{gap:28px;grid-template-columns:minmax(250px,1fr) 1.7fr}.offer-hero h1{font-size:36px;line-height:48px}
+ .offer-inclusions{grid-template-columns:1fr;gap:24px}.offer-included-cards{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ .booking-page{padding:24px 24px 136px}.appointment-layout{display:flex;flex-direction:column;gap:24px;max-width:480px}
+ .appointment-intro{gap:12px;width:100%}.appointment-intro h1{font-size:28px;line-height:42px}.appointment-intro h1 span{display:inline}
+ .appointment-description{font-size:12px;line-height:24px}.appointment-next,.appointment-assistance,.appointment-footer{display:none}
+ .appointment-form{width:100%;box-sizing:border-box;padding:20px;gap:20px}.appointment-form-intro h2{font-size:22px;line-height:34px;color:var(--brand);margin-bottom:8px}
+ .appointment-fields{grid-template-columns:1fr;gap:16px}.appointment-timing-fields{grid-template-columns:1fr;gap:16px}.appointment-submit-desktop{display:none}
+ .appointment-mobile-help{display:flex;justify-content:center;align-items:center;gap:12px;width:100%;min-height:32px;font-size:12px;line-height:24px;color:var(--teal);text-decoration:none}
+ .appointment-mobile-help img{width:28px;height:16px}
+ .appointment-mobile-submit{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--canvas);border-top:1px solid var(--line);padding:16px 24px calc(16px + env(safe-area-inset-bottom));z-index:30}
+ .appointment-mobile-submit .button{width:100%;max-width:480px;margin:auto;display:flex}
+ .confirmation-page{padding:24px 24px 136px}.confirmation-card{max-width:480px;padding:40px 24px;gap:24px}.confirmation-card h1{font-size:28px;line-height:42px}
+ .offer-page{padding-top:32px;padding-bottom:24px;gap:32px}
+ .offer-hero{display:flex;flex-direction:column;gap:14px;direction:rtl;align-items:stretch}.offer-hero-copy{display:contents}
+ .offer-kicker{order:0}.offer-hero h1{order:1;font-size:28px;line-height:40px}.offer-hero h1 span{display:inline}.offer-description{order:2;font-size:14px;line-height:25px}
+ .offer-provider{order:3;display:flex;flex-direction:row-reverse;gap:16px;height:172px;min-height:172px;background:var(--pale)}
+ .offer-portrait{height:172px;width:44.45%;flex:0 0 44.45%}.offer-portrait img{height:172px}
+ .offer-provider-info{flex:1;min-width:0;height:172px;background:transparent;padding:10px 0 10px 8px;gap:10px}.offer-provider-info .offer-provider-name{font-size:18px;line-height:28px;font-weight:600}.offer-provider-info>p{font-size:12px;line-height:20px;font-weight:400}
+ .offer-price--desktop{display:none}.offer-provider-info .offer-price--mobile{display:flex!important;min-height:60px;gap:8px}.offer-price-value{font-size:42px;line-height:60px}.offer-price-unit{font-size:14px;line-height:24px}
+ .offer-summary-caption{order:4;font-size:12px;line-height:24px}.offer-primary-cta{order:5;width:100%}
+ .offer-booking{padding:24px 20px}.offer-booking-intro h2{margin-bottom:8px}.offer-booking-intro p{font-size:13px;line-height:24px}
+ .offer-booking-fields{grid-template-columns:1fr;gap:16px}.offer-booking-action{flex-direction:column;gap:10px;align-items:stretch}.offer-booking-action .button{width:100%;flex:auto}.offer-booking-action p{font-size:12px;line-height:24px;flex:auto}
+ .offer-inclusions{display:flex;flex-direction:column;gap:24px}.offer-section-intro{gap:8px}.offer-section-subtitle{font-size:16px;line-height:28px}.offer-section-intro>p:last-child{font-size:13px;line-height:24px}
+ .offer-included-cards{gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.offer-included-card{padding:16px;min-height:168px;gap:8px}.offer-dental-icon{width:28px;height:28px}.offer-included-card h3{font-size:14px;line-height:24px}.offer-included-card p{font-size:12px;line-height:20px}.offer-dental-watermark{width:89.6px;height:89.6px}
+ .offer-journey{padding:24px;gap:24px}.offer-journey ol{grid-template-columns:1fr;gap:24px}.offer-journey h3{font-size:14px;line-height:24px}
+ .offer-faq{display:flex;flex-direction:column;gap:32px}.offer-faq-intro h2{margin-bottom:8px}.offer-faq-intro p{font-size:14px;line-height:26px}.offer-faq-list{width:100%}.offer-faq-item{padding:16px}.offer-faq-item summary{min-height:48px}.offer-faq-item h3{font-size:15px;line-height:24px}.offer-faq-item p{font-size:13px;line-height:24px}.offer-final-cta{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.appointment-timing summary img{transition:none}}

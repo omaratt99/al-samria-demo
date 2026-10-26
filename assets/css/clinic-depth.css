@@ -1,0 +1,71 @@
+/* A soft raised finish; existing card surfaces, artwork and dimensions stay in home-cards.css. */
+.services-section .home-clinic-card {
+  --clinic-edge-light: rgb(255 255 255 / .95);
+  --clinic-edge-shade: rgb(20 60 54 / .055);
+  box-shadow:
+    inset 1px 1px 1px var(--clinic-edge-light),
+    inset -1px -1px 1px var(--clinic-edge-shade),
+    -5px -5px 12px -6px rgb(255 255 255 / .95),
+    8px 12px 22px -10px rgb(20 60 54 / .20),
+    14px 18px 32px -15px rgb(20 60 54 / .17);
+  transition: box-shadow .22s ease, transform .22s ease;
+}
+
+.services-section .home-clinic-card--general {
+  --clinic-edge-light: rgb(255 255 255 / .30);
+  --clinic-edge-shade: rgb(0 42 46 / .20);
+}
+
+.services-section .clinic-polished-icon {
+  box-shadow:
+    inset 1px 1px 2px rgb(255 255 255 / .95),
+    inset -1px -1px 2px rgb(20 60 54 / .10),
+    -2px -2px 6px rgb(255 255 255 / .55),
+    3px 4px 8px rgb(20 60 54 / .17);
+}
+
+.services-section .home-clinic-card--general .clinic-polished-icon {
+  box-shadow:
+    inset 1px 1px 2px rgb(255 255 255 / .95),
+    inset -1px -1px 2px rgb(20 60 54 / .10),
+    -2px -2px 6px rgb(255 255 255 / .18),
+    3px 4px 8px rgb(0 42 46 / .24);
+}
+
+/* Override the original hover on touch screens: depth is present at rest. */
+.services-section .home-clinic-card:hover {
+  transform: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .services-section .home-clinic-card:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      inset 1px 1px 1px var(--clinic-edge-light),
+      inset -1px -1px 1px var(--clinic-edge-shade),
+      -5px -5px 14px -6px rgb(255 255 255 / .95),
+      9px 15px 25px -10px rgb(20 60 54 / .22),
+      15px 21px 34px -15px rgb(20 60 54 / .18);
+  }
+}
+
+@media (max-width: 767px) {
+  /* Let the shadows breathe inside the scroll window without moving either row. */
+  .services-section .home-clinic-carousel {
+    padding-block: 10px 24px;
+    margin-block: -10px -24px;
+    padding-right: 14px;
+    margin-right: -14px;
+    scroll-padding-right: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-section .home-clinic-card {
+    transition: none;
+  }
+
+  .services-section .home-clinic-card:hover {
+    transform: none;
+  }
+}

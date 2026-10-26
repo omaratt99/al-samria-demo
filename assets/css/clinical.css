@@ -1,0 +1,330 @@
+.clinical-page { color:var(--ink); text-align:right; }
+.clinical-page h1,.clinical-page h2,.clinical-page h3,.clinical-page h4,.clinical-page p { margin:0; }
+.clinical-page h1 { font-size:64px;line-height:1.55;font-weight:600; }
+.clinical-page h3,.clinical-page h4 { font-weight:600; }
+.clinical-page .section-heading { margin:0; }
+.clinical-page .section-title { font-size:38px;line-height:58px;font-weight:600; }
+.clinical-page .section-description { font-size:14px;line-height:25px; }
+.clinical-section { padding-top:48px;padding-bottom:48px;display:flex;flex-direction:column;gap:32px; }
+.clinical-panel { border:1px solid var(--line);border-radius:24px;background:#fff;padding:32px; }
+.clinical-page-navigation { display:flex;align-items:center;justify-content:space-between;direction:ltr;min-height:44px; }
+.clinical-breadcrumb { display:flex;direction:rtl;list-style:none;padding:0;margin:0;gap:8px;font-size:12px;line-height:24px;color:var(--muted); }
+.clinical-breadcrumb li+li::before { content:"/";margin-left:8px; }
+.clinical-specialty-badge { display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:var(--pale);border-radius:999px;color:var(--teal);width:max-content;font-size:18px;line-height:30px;font-weight:500; }
+.clinical-specialty-badge a { color:inherit;text-decoration:none; }
+.clinical-heart { width:28px;height:30px;object-fit:contain;flex:none; }
+.clinical-heart-small { width:21px;height:21px;object-fit:contain;flex:none; }
+.clinical-experience { display:inline-flex;gap:4px;align-items:center;justify-content:center;height:40px;padding:7px 10px;border:1px solid #fff;border-radius:999px;background:var(--pale);box-shadow:0 4px 12px #143b361a;color:var(--teal);font-size:12px;line-height:24px;white-space:nowrap; }
+.clinical-experience-icon { width:14px;height:14px;object-fit:contain;flex:none; }
+.clinical-heading-row { display:flex;align-items:center;justify-content:space-between;gap:12px; }
+.clinical-profile-link { display:inline-flex;align-items:center;gap:12px;min-height:44px;color:var(--ink);text-decoration:none;font-size:18px;line-height:24px;padding:0 12px; }
+.clinical-link-arrow { width:28px;height:16px;object-fit:contain;flex:none; }
+.clinical-checklist { list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;color:var(--muted);font-size:14px;line-height:25px; }
+.clinical-checklist li { display:flex;gap:10px;align-items:flex-start; }
+.clinical-check { width:20px;height:20px;object-fit:contain;flex:none;margin-top:2px; }
+.clinical-position { display:flex;gap:4px;align-items:center;justify-content:center;height:22px; }
+.clinical-position span { display:block;width:6px;height:4px;border-radius:4px;background:var(--line);margin:0 7px; }
+.clinical-position .is-current { background:var(--brand);width:24px; }
+.clinical-intro { padding-top:48px;padding-bottom:48px;display:flex;flex-direction:column;gap:32px; }
+.clinic-page { display:flex;flex-direction:column; }
+.clinic-hero { display:grid;grid-template-columns:minmax(0,1fr) 500px;gap:72px;align-items:center;min-height:470px;padding:16px 0; }
+.clinic-hero-copy { display:flex;flex-direction:column;gap:30px;align-items:flex-start;min-width:0; }
+.clinic-hero-description { font-size:18px;line-height:36px;color:var(--muted); }
+.clinic-hero-button { min-width:270px; }
+.clinic-editorial { width:500px;height:440px;position:relative;direction:rtl; }
+.clinic-editorial-foundation { position:absolute;left:3.2%;top:3.63%;width:96.8%;height:96.36%;background:var(--mint);border-radius:32px; }
+.clinic-editorial-image { position:absolute;left:0;top:0;width:96%;height:92.73%;object-fit:cover;border-radius:28px; }
+.clinic-care-promise { position:absolute;left:4.8%;top:80.45%;width:74.8%;display:flex;gap:16px;align-items:center;padding:20px;background:#fff;border-radius:18px;box-shadow:0 5px 12px -3px #143c3612,0 24px 44px -18px #143c3621; }
+.clinical-care-icon { width:36px;height:36px;flex:none;object-fit:contain; }
+.clinic-care-promise strong { font-size:18px;line-height:30px;display:block; }
+.clinic-care-promise p { font-size:12px;line-height:24px;color:var(--muted); }
+.clinic-emergency { display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:11px 16px 16px; }
+.clinic-emergency strong { font-size:12px;font-weight:500;line-height:22px; }
+.clinic-emergency p { font-size:10px;line-height:25px;color:var(--muted);margin-top:4px; }
+.clinical-shield { width:28px;height:28px;object-fit:contain;flex:none; }
+.clinic-doctor-section { order:1; }
+.clinic-specialisations { order:2; }
+.clinic-overview-section { order:3; }
+.clinic-visit-section { order:4;background:var(--pale); }
+.clinic-invitation { order:5; }
+.clinic-faq-section { order:6; }
+.clinic-doctor-card { display:grid;grid-template-columns:416px minmax(0,1fr);direction:ltr;min-height:544px;overflow:hidden;border:1px solid #fff;border-radius:24px;background:white;box-shadow:0 3.75px 9px -2.25px #143c3612,0 18px 33px -13.5px #143c3621; }
+.clinic-doctor-portrait { position:relative;overflow:hidden;background:linear-gradient(180deg,var(--canvas) 25.74%,#e5efe9 66.83%,#e0ede8); }
+.clinic-doctor-portrait:focus-visible { outline:3px solid var(--brand);outline-offset:-5px; }
+.clinic-doctor-image { position:absolute;left:-20.63%;top:9.66%;width:141.26%;height:87.9%;object-fit:fill;max-width:none; }
+.clinic-doctor-portrait .clinical-experience { position:absolute;right:20px;top:20px;width:166px;direction:ltr; }
+.clinic-doctor-details { direction:rtl;padding:40px 48px 48px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:42px;min-width:0; }
+.clinic-doctor-details h3 { font-size:32px;line-height:44px; }
+.clinic-doctor-specialty { font-size:18px;line-height:28px;color:var(--teal);margin-top:8px!important; }
+.clinic-doctor-care { font-size:16px;line-height:28px;color:var(--muted);margin-top:12px!important; }
+.clinic-doctor-focus { background:var(--pale);padding:20px;border-radius:16px;width:100%; }
+.clinic-doctor-focus>p { font-size:13px;line-height:22px;color:var(--teal); }
+.clinic-doctor-focus ul { list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:0;margin:12px 0 0; }
+.clinic-doctor-focus strong { font-size:14px;line-height:22px;font-weight:500;display:block; }
+.clinic-doctor-focus li span { font-size:12px;line-height:24px;color:var(--muted);display:block;margin-top:4px; }
+.clinic-doctor-button { min-width:270px; }
+.clinic-overview { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:center; }
+.clinic-overview>p { color:var(--muted);font-size:18px;line-height:35px; }
+.clinic-visit-reasons { display:grid;grid-template-columns:320px minmax(0,1fr);gap:40px;background:var(--pale);padding:32px;border-radius:24px; }
+.clinic-visit-reasons ul { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 12px;margin:0;padding:0;list-style:none; }
+.clinic-visit-reasons li { background:white;padding:12px 10px;min-height:64px;border-radius:8px;font-size:18px;line-height:28px;font-weight:700;display:flex;align-items:center; }
+.clinical-specialty-track { display:flex;gap:24px;overflow:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px 0;max-width:100%; }
+.clinical-specialty-track::-webkit-scrollbar { display:none; }
+.clinical-specialty-card { position:relative;flex:0 0 380px;scroll-snap-align:start;min-height:200px;padding:16px;border:1px solid var(--line);border-radius:24px;background:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;gap:20px;box-shadow:0 8px 20px -12px #143c3614,inset 0 1px 1px #ffffffd9; }
+.clinical-polished-icon { display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid white;border-radius:999px;background:linear-gradient(135deg,#fff 14.286%,#e5f2ed 48.571%,#c4d9d1 85.714%);position:relative; }
+.clinical-specialty-watermark { position:absolute;left:-13px;bottom:-25px;width:116px;height:116px;opacity:.04;object-fit:contain; }
+.clinical-specialty-card>div { position:relative;width:100%; }
+.clinical-specialty-card h3 { font-size:18px;line-height:28px;font-weight:700; }
+.clinical-specialty-card p { font-size:14px;line-height:24px;color:var(--muted);margin-top:6px; }
+.clinic-visit-layout { display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:32px;align-items:start;direction:ltr; }
+.clinic-visit-layout>* { direction:rtl; }
+.clinic-visit-steps { list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:16px; }
+.clinic-visit-steps>li { background:white;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:12px; }
+.clinical-step-heading { display:flex;gap:12px;align-items:center; }
+.clinical-step-heading>span { font-family:"DM Sans",sans-serif;color:var(--teal);font-size:16px;line-height:28px; }
+.clinical-step-heading h3 { font-size:20px;line-height:32px; }
+.clinic-visit-steps>li>p { font-size:14px;line-height:25px;color:var(--muted); }
+.clinic-diagnostics { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0; }
+.clinic-diagnostics li { padding:10px 12px;background:var(--pale);border-radius:12px;display:flex;gap:12px;align-items:center;min-width:0; }
+.clinical-diagnostic-icon { width:24px;height:24px;flex:none;object-fit:contain; }
+.clinic-diagnostics h4 { font-size:14px;line-height:24px; }
+.clinic-diagnostics p { font-size:12px;line-height:20px;color:var(--muted);margin-top:2px; }
+.clinic-preparation { background:#fff;border-radius:24px;padding:16px 20px;display:flex;flex-direction:column;gap:30px; }
+.clinic-preparation .button { width:100%; }
+.clinic-invitation-panel { background:var(--pale);border-radius:24px;padding:40px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center; }
+.clinic-invitation-panel .section-heading { text-align:center; }
+.clinic-invitation-panel .button { min-width:302px; }
+.clinic-faq-section { display:grid;grid-template-columns:minmax(0,1fr) 360px;grid-template-areas:"heading heading" "faq assistance";gap:32px;align-items:start; }
+.clinic-faq-heading { grid-area:heading; }
+.clinic-faq { grid-area:faq; }
+.clinic-question-help { grid-area:assistance;background:var(--teal);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:21px;align-items:center; }
+.clinic-question-help>p { font-size:21px;line-height:28px;font-weight:600;color:white; }
+.clinic-question-help .button { width:100%;height:46px; }
+.doctor-overview { padding-top:38px;padding-bottom:0; }
+.doctor-introduction { display:grid;grid-template-columns:minmax(0,1fr) 416px;grid-template-rows:auto auto auto auto;gap:22px 64px;margin-top:32px;align-items:start; }
+.doctor-portrait-and-facts,.doctor-badges { display:contents; }
+.doctor-specialty-icon--mobile { display:none; }
+.doctor-specialty-icon--desktop { width:auto;height:auto; }
+.doctor-page:not(.brief-doctor) .doctor-badges .clinical-specialty-badge { height:48px;width:174px;padding:8px 16px 8px 31px;gap:5px;font-size:20px;line-height:22px; }
+.doctor-identity { grid-column:1;grid-row:1;display:flex;flex-direction:column;align-items:flex-start;gap:22px;padding-top:40px; }
+.doctor-identity h1 { color:var(--ink);order:1; }
+.doctor-identity .clinical-specialty-badge { order:0; }
+.doctor-mobile-experience { display:none;order:2; }
+.doctor-portrait { grid-column:2;grid-row:1 / 4;width:416px;height:480px;overflow:hidden;position:relative;border-radius:24px;background:linear-gradient(180deg,var(--canvas) 26%,#e5efe980 67%,#e0ede8);box-shadow:0 5px 12px -3px #143c3612,0 24px 44px -18px #143c3621,inset 0 2px 1px #fffffff2; }
+.doctor-portrait-image { position:absolute;left:-92px;top:-104px;width:600px;height:800px;max-width:none;object-fit:contain; }
+.doctor-care { grid-column:1;grid-row:2;display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:25px;color:var(--muted); }
+.doctor-care .doctor-care-intro { font-size:18px;line-height:36px;color:var(--ink); }
+.doctor-care-focus { line-height:28px; }
+.doctor-care-focus>span { font-weight:500; }
+.doctor-hero-cta { grid-column:1;grid-row:3;align-self:start;padding-bottom:40px; }
+.doctor-hero-cta .button { min-width:309px; }
+.doctor-facts { grid-column:1 / -1;grid-row:4;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px 32px;margin-top:10px; }
+.doctor-fact+ .doctor-fact { border-right:1px solid var(--line);padding-right:32px; }
+.doctor-fact>div { display:flex;align-items:baseline;gap:14px;font-size:14px;line-height:22px;font-weight:500; }
+.doctor-fact-value { font-family:"DM Sans",sans-serif;font-size:34px;line-height:42px;color:var(--teal);font-weight:600;white-space:nowrap; }
+.doctor-fact>p { font-size:12px;line-height:24px;color:var(--muted);margin-top:3px; }
+.doctor-details { display:flex;flex-direction:column;gap:24px;padding-top:29px;padding-bottom:64px; }
+.doctor-specialisations { background:var(--pale);border:none;display:flex;flex-direction:column;gap:24px; }
+.doctor-specialties-heading { display:flex;gap:16px;align-items:center; }
+.doctor-specialties-heading>div { flex:1;min-width:0; }
+.doctor-specialty-track { display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px; }
+.doctor-specialty { background:white;border-radius:16px;padding:20px;min-height:110px;display:flex;align-items:center; }
+.doctor-specialty h3 { font-size:14px;line-height:24px;font-weight:500; }
+.doctor-specialty-mobile-icon { display:none; }
+.doctor-specialisations .clinical-position { display:none; }
+.doctor-qualifications ul { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0 0;padding:0;list-style:none; }
+.doctor-qualifications li { display:flex;align-items:center;gap:16px; }
+.doctor-qualifications h3 { font-size:16px;line-height:22px;font-weight:500; }
+.doctor-qualifications li p { display:none;font-size:12px;line-height:24px;color:var(--muted);margin-top:8px; }
+.doctor-qualifications-notice { display:none;color:var(--teal);font-size:12px;line-height:24px;margin-top:8px!important; }
+.doctor-academic-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;flex:none;background:var(--pale);border-radius:12px; }
+.clinical-academic { width:22px;height:22px;object-fit:contain; }
+.doctor-reviews-section { background:var(--pale); }
+.doctor-reviews-section .clinical-section { padding-top:40px;padding-bottom:56px;gap:30px; }
+.doctor-reviews-heading { display:flex;align-items:center;justify-content:space-between;gap:40px; }
+.doctor-rating-summary { flex:0 0 210px; }
+.doctor-rating-summary>div { display:flex;align-items:baseline;gap:12px; }
+.doctor-rating-summary strong { font-family:"DM Sans",sans-serif;font-size:34px;font-weight:600; }
+.doctor-rating-summary>div>span { color:#f4b544;font-size:19px; }
+.doctor-rating-summary p { font-size:12px;line-height:24px;color:var(--muted);margin-top:6px; }
+.doctor-review-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px; }
+.doctor-review { min-height:222px;padding:20px;border-radius:24px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;box-shadow:0 8px 20px #143c3614,inset 0 1px 1px #ffffffd9; }
+.doctor-review-marks { display:flex;justify-content:space-between;align-items:center;direction:rtl; }
+.doctor-review-stars { display:flex;gap:3px;align-items:center; }
+.doctor-review-star { width:14px;height:14px;object-fit:contain; }
+.doctor-review-google { display:none;width:18px;height:19.286px;object-fit:contain; }
+.doctor-review>p { font-size:14px;line-height:24px; }
+.doctor-review-person { display:flex;gap:10px;align-items:center; }
+.doctor-review-avatar { width:36px;height:36px;border-radius:999px;background:var(--mint);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px;flex:none; }
+.doctor-review-person>div { display:flex;flex-direction:column;gap:2px;font-size:12px;line-height:24px; }
+.doctor-review-person small { font-size:11px;line-height:18px;color:var(--muted); }
+.doctor-feedback { display:flex;flex-direction:column;gap:16px; }
+.doctor-feedback>h3 { font-size:30px;line-height:44px;font-weight:700; }
+.doctor-feedback>p { font-size:18px;line-height:36px;color:var(--muted); }
+.doctor-feedback>label { font-size:14px;line-height:24px; }
+.doctor-feedback textarea { display:block;resize:vertical;width:100%;min-height:80px;border:1px solid #d9d9d9;border-radius:8px;background:#fff;color:var(--ink);padding:16px;font:inherit;font-size:14px;line-height:24px; }
+.doctor-feedback>.button { align-self:flex-start;min-width:220px;height:46px; }
+.doctor-feedback .review-status { font-size:13px;line-height:24px; }
+.doctor-visit-support { display:grid;grid-template-columns:minmax(0,1fr) 440px;gap:64px;align-items:center;padding-top:64px;padding-bottom:64px; }
+.doctor-next-step { display:flex;flex-direction:column;gap:20px; }
+.doctor-next-step .button { min-width:267px;align-self:flex-start; }
+.doctor-next-step .section-title { font-size:46px;line-height:68px;font-weight:700; }
+.doctor-next-step .section-description { font-size:18px;line-height:36px; }
+.doctor-booking-steps { display:flex;align-items:center;gap:12px;list-style:none;padding:0;margin:0;color:var(--muted);font-size:12px;line-height:24px; }
+.doctor-booking-steps li+li::before { content:"←";color:var(--teal);margin-left:12px; }
+.doctor-preparation { display:flex;flex-direction:column;gap:20px;padding:28px; }
+.doctor-booking-help { display:flex;align-items:center;gap:10px;font-size:14px;line-height:22px;font-weight:500; }
+.clinical-phone { width:24px;height:24px;object-fit:contain;flex:none; }
+.doctor-preparation .button { align-self:flex-start;min-width:248px;height:46px; }
+.brief-clinic .clinic-editorial { margin-bottom:0; }
+.brief-doctor .doctor-introduction { grid-template-rows:auto auto 1fr;min-height:480px;margin-bottom:48px; }
+.brief-doctor .doctor-hero-cta { padding-bottom:0; }
+@media(min-width:769px) and (max-width:1200px) {
+ .clinic-hero { grid-template-columns:minmax(0,1fr) 42%;gap:40px; }
+ .clinic-editorial { width:100%;height:auto;aspect-ratio:500/440; }
+ .clinic-hero h1 { font-size:46px; }
+ .clinic-hero-copy { gap:24px; }
+ .clinic-doctor-card { grid-template-columns:35% minmax(0,1fr); }
+ .clinic-doctor-details { padding:28px;gap:24px; }
+ .clinic-visit-reasons { grid-template-columns:30% minmax(0,1fr);gap:24px; }
+ .clinic-visit-layout { grid-template-columns:minmax(0,1fr) 32%;gap:24px; }
+ .clinic-diagnostics { grid-template-columns:1fr; }
+ .doctor-introduction { grid-template-columns:minmax(0,1fr) 36%;gap:22px 40px; }
+ .doctor-portrait { width:100%; }
+ .doctor-portrait-image { left:50%;transform:translateX(-50%); }
+ .doctor-identity h1 { font-size:50px; }
+ .doctor-specialty { padding:16px; }
+ .doctor-visit-support { grid-template-columns:minmax(0,1fr) 38%;gap:40px; }
+}
+@media(max-width:768px) {
+ .clinical-page h1 { font-size:38px;line-height:64px; }
+ .clinical-page .section-title { font-size:30px;line-height:48px; }
+ .clinical-page .section-description { font-size:15px;line-height:30px; }
+ .clinical-section { padding-top:32px;padding-bottom:24px;gap:24px; }
+ .clinical-panel { padding:24px 20px; }
+ .clinical-page-navigation { min-height:44px; }
+ .clinical-breadcrumb { display:none; }
+ .clinical-page-navigation [data-back] { border:0;box-shadow:none;background:none; }
+ .clinical-specialty-badge { font-size:17px;line-height:26px;gap:10px; }
+ .clinical-experience { height:40px; }
+ .clinical-heading-row { gap:8px; }
+ .clinical-heading-row .section-label { font-size:22px;white-space:nowrap; }
+ .clinical-profile-link { gap:8px;font-size:14px;padding:0; }
+ .clinical-intro { padding-top:0;padding-bottom:40px;gap:24px; }
+ .clinic-hero { display:flex;flex-direction:column;gap:35px;padding:16px 0;min-height:0; }
+ .clinic-hero-copy { gap:20px;width:100%; }
+ .clinic-hero h1 { color:var(--brand); }
+ .clinic-hero-button { min-width:0;width:100%;height:52px; }
+ .clinic-editorial { width:100%;height:auto;aspect-ratio:342/300.96; }
+ .clinic-editorial-foundation { border-radius:21.888px; }
+ .clinic-editorial-image { border-radius:19.152px; }
+ .clinic-care-promise { padding:13.68px;gap:10.944px;border-radius:12.312px; }
+ .clinical-care-icon { width:24.624px;height:24.624px; }
+ .clinic-care-promise strong { font-size:12.312px;line-height:20.52px; }
+ .clinic-care-promise p { font-size:8.208px;line-height:16.416px; }
+ .clinic-emergency { min-height:110px; }
+ .clinic-overview-section { order:2; }
+ .clinic-specialisations { order:3; }
+ .clinic-doctor-card { display:block;position:relative;min-height:0;height:480px;width:100%;border-radius:18px; }
+ .clinic-doctor-portrait { position:absolute;inset:0;border-radius:18px;background:linear-gradient(180deg,#e5efe9,var(--canvas) 68%,#e0ede8); }
+ .clinic-doctor-portrait .clinical-experience { top:16px;right:16px; }
+ .clinic-doctor-details { position:absolute;bottom:0;left:0;right:0;border-radius:18px;background:white;padding:16px;min-height:156px;gap:20px;justify-content:space-between; }
+ .clinic-doctor-details h3 { font-size:20px;line-height:30px; }
+ .clinic-doctor-specialty { font-size:13px;line-height:21px;margin-top:3px!important; }
+ .clinic-doctor-care,.clinic-doctor-focus { display:none; }
+ .clinic-doctor-button { min-width:0;width:100%; }
+ .clinic-overview { display:flex;flex-direction:column;gap:16px;align-items:stretch; }
+ .clinic-overview>p { font-size:15px;line-height:30px; }
+ .clinic-visit-reasons { display:flex;flex-direction:column;gap:24px;padding:24px 16px 16px; }
+ .clinic-visit-reasons ul { gap:15px 12px; }
+ .clinic-visit-reasons li { min-height:53px;padding:5px 10px;font-size:13px;line-height:24px;font-weight:600; }
+ .clinical-specialty-track { gap:12px; }
+ .clinical-specialty-card { flex-basis:282px;min-height:184px; }
+ .clinical-specialty-card h3 { font-size:16px;line-height:26px; }
+ .clinic-visit-layout { display:flex;flex-direction:column;gap:24px; }
+ .clinic-visit-steps { width:100%; }
+ .clinic-visit-steps>li { padding:16px; }
+ .clinical-step-heading h3 { font-size:18px;line-height:30px; }
+ .clinic-diagnostics { grid-template-columns:1fr;gap:8px; }
+ .clinic-preparation { width:100%;padding:16px 20px;gap:20px; }
+ .clinic-preparation .button { min-width:0; }
+ .clinic-invitation-panel { padding:24px 20px;text-align:right; }
+ .clinic-invitation-panel .section-heading { text-align:right; }
+ .clinic-invitation-panel .button { width:100%;min-width:0; }
+ .clinic-faq-section { display:flex;flex-direction:column;gap:24px; }
+ .clinic-faq-section>* { width:100%; }
+ .clinic-question-help { padding:24px; }
+ .doctor-overview { padding-top:8px; }
+ .doctor-introduction { display:flex;flex-direction:column;gap:25px;margin-top:25px; }
+ .doctor-introduction>* { width:100%; }
+ .doctor-identity { padding:0;gap:12px; }
+ .doctor-identity h1 { color:var(--brand); }
+ .doctor-mobile-experience { display:block; }
+ .doctor-mobile-experience .clinical-experience { width:151px;height:30px;font-size:14px;line-height:22px;direction:ltr; }
+ .doctor-mobile-experience .clinical-experience-icon { width:18px;height:18px; }
+ .doctor-portrait { height:356px;background:var(--mint); }
+ .doctor-portrait-image { width:480px;height:640px;left:50%;transform:translateX(-50%);top:-83px; }
+ .doctor-care { font-size:14px;line-height:25px;gap:12px; }
+ .doctor-care .doctor-care-intro { font-size:15px;line-height:30px; }
+ .doctor-care-focus { font-size:13px;line-height:24px; }
+ .doctor-facts { padding:20px;display:flex;flex-direction:column;gap:16px;margin:0; }
+ .doctor-fact+.doctor-fact { border-right:0;border-top:1px solid var(--line);padding:16px 0 0; }
+ .doctor-fact>div { gap:12px;align-items:center; }
+ .doctor-fact-value { font-size:30px;line-height:38px; }
+ .doctor-fact>p { margin-top:4px; }
+ .doctor-hero-cta { padding:0 0 24px; }
+ .doctor-hero-cta .button { width:100%;min-width:0; }
+ .doctor-details { gap:24px;padding-top:8px;padding-bottom:24px; }
+ .doctor-specialisations { padding:24px 20px;gap:24px; }
+ .doctor-specialties-heading { align-items:flex-start;gap:12px; }
+ .doctor-specialties-heading>.clinical-heart { width:32px;height:32px; }
+ .doctor-specialty-track { display:flex;gap:12px;overflow:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:1px 0; }
+ .doctor-specialty-track::-webkit-scrollbar { display:none; }
+ .doctor-specialty { flex:0 0 262px;min-height:152px;padding:16px;border:1px solid var(--line);gap:6px;align-items:flex-start;justify-content:center;scroll-snap-align:start;box-shadow:0 8px 20px #143c3614; }
+ .doctor-specialty-mobile-icon { display:block;flex:none; }
+ .doctor-specialty h3 { flex:1; }
+ .doctor-specialisations .clinical-position { display:flex; }
+ .doctor-qualifications ul { display:flex;flex-direction:column;gap:20px; }
+ .doctor-qualifications li { gap:12px;align-items:flex-start; }
+ .doctor-qualifications li+li { padding-top:20px;border-top:1px solid var(--line); }
+ .doctor-qualifications h3 { font-size:14px;line-height:22px; }
+ .doctor-qualifications li p,.doctor-qualifications-notice { display:block; }
+ .doctor-reviews-section { background:var(--canvas); }
+ .doctor-reviews-section .clinical-section { padding-top:32px;padding-bottom:24px;gap:24px; }
+ .doctor-rating-summary { display:none; }
+ .doctor-review-grid { display:grid;grid-template-columns:repeat(3,288px);grid-template-rows:repeat(2,222px);grid-auto-flow:row;gap:24px 16px;overflow:auto;padding:6px 0;scroll-snap-type:x mandatory;scrollbar-width:none; }
+ .doctor-review-grid::-webkit-scrollbar { display:none; }
+ .doctor-review { min-height:222px;scroll-snap-align:start; }
+ .doctor-review-person small { font-size:10px; }
+ .doctor-review-star { width:12.5px;height:12.5px; }
+ .doctor-review-stars { gap:2.5px; }
+ .doctor-review-google { display:block; }
+ .doctor-feedback { display:none; }
+ .doctor-visit-support { display:flex;flex-direction:column;gap:32px;align-items:stretch;padding-top:32px;padding-bottom:24px; }
+ .doctor-next-step { gap:16px; }
+ .doctor-next-step .section-title { font-size:28px;line-height:42px; }
+ .doctor-next-step .section-description { font-size:15px;line-height:30px; }
+ .doctor-next-step .button { width:100%;min-width:0; }
+ .doctor-booking-steps { gap:8px;font-size:11px;line-height:18px; }
+ .doctor-booking-steps li+li::before { margin-left:8px; }
+ .doctor-preparation { padding:24px 20px;gap:24px; }
+ .doctor-preparation .button { width:100%;height:52px;min-width:0; }
+ .brief-doctor .doctor-introduction { min-height:0;margin-bottom:0; }
+ .doctor-page:not(.brief-doctor) .clinical-page-navigation { display:none; }
+ .doctor-page:not(.brief-doctor) .doctor-introduction { gap:10px;margin-top:0; }
+ .doctor-page:not(.brief-doctor) .doctor-identity { gap:8px; }
+ .doctor-page:not(.brief-doctor) .doctor-identity h1 { color:var(--ink);font-size:38px;line-height:64px;font-weight:600; }
+ .doctor-page:not(.brief-doctor) .doctor-badges { display:flex;gap:8px;align-items:center;order:2; }
+ .doctor-page:not(.brief-doctor) .doctor-badges .clinical-specialty-badge,.doctor-experience-eyebrow { display:flex;align-items:center;justify-content:center;width:auto;height:31px;gap:4px;padding:7px 10px;border-radius:8px;background:var(--pale);font-size:11px;line-height:24px;font-weight:500;color:var(--teal);white-space:nowrap; }
+ .doctor-badges .doctor-specialty-icon--desktop { display:none; }
+ .doctor-badges .doctor-specialty-icon--mobile { display:block;flex-shrink:0; }
+ .doctor-experience-eyebrow img { flex-shrink:0; }
+ .doctor-page:not(.brief-doctor) .doctor-portrait-and-facts { display:block;position:relative;height:598px;border-radius:24px;overflow:hidden;background:var(--mint);box-shadow:0 5px 12px -3px #143c3612,0 24px 44px -18px #143c3621; }
+ .doctor-portrait-and-facts .doctor-portrait { position:absolute;inset:0;width:100%;height:100%;border-radius:24px;box-shadow:none; }
+ .doctor-portrait-and-facts .doctor-portrait-image { left:calc(50% - 236px);transform:none; }
+ .doctor-portrait-and-facts .doctor-facts { position:absolute;bottom:0;inset-inline:0;width:100%;height:304px;padding:14px 20px 20px;justify-content:flex-end; }
+ .doctor-page:not(.brief-doctor) .doctor-care-focus { display:none; }
+ .doctor-page:not(.brief-doctor) .doctor-care .doctor-care-intro { font-weight:400; }
+ .doctor-page:not(.brief-doctor) .doctor-hero-cta { padding-bottom:0; }
+}
+@media(prefers-reduced-motion:reduce) { .clinical-specialty-track,.doctor-specialty-track,.doctor-review-grid { scroll-behavior:auto; } }

@@ -1,0 +1,119 @@
+{
+  "demoMode": true,
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "مركز السامرية الطبي في جدة | عيادات وأطباء وطلب موعد",
+      "page_type": "home",
+      "indexable": false
+    },
+    {
+      "file": "clinic.html",
+      "title": "عيادة القلب | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "doctor.html",
+      "title": "د. شريف حسين — طب القلب | مركز السامرية الطبي",
+      "page_type": "doctor",
+      "indexable": false
+    },
+    {
+      "file": "clinic-general.html",
+      "title": "الطب العام | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-dental.html",
+      "title": "طب الأسنان | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-dermatology.html",
+      "title": "الجلدية والتجميل | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-women.html",
+      "title": "النساء والولادة | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-pediatrics.html",
+      "title": "طب الأطفال | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-internal.html",
+      "title": "الباطنة | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-eyes.html",
+      "title": "العيون | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-orthopedics.html",
+      "title": "العظام | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-surgery.html",
+      "title": "الجراحة | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-ent.html",
+      "title": "الأنف والأذن والحنجرة | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "clinic-urology.html",
+      "title": "المسالك البولية | مركز السامرية الطبي في جدة",
+      "page_type": "clinic",
+      "indexable": false
+    },
+    {
+      "file": "doctor-jehan.html",
+      "title": "د. جيهان محمود — طب النساء | مركز السامرية الطبي",
+      "page_type": "doctor",
+      "indexable": false
+    },
+    {
+      "file": "doctor-arwa.html",
+      "title": "د. اروى المسلمى — طب الأسنان | مركز السامرية الطبي",
+      "page_type": "doctor",
+      "indexable": false
+    },
+    {
+      "file": "booking.html",
+      "title": "طلب موعد | مركز السامرية الطبي بجدة",
+      "page_type": "booking",
+      "indexable": false
+    },
+    {
+      "file": "appointment-received.html",
+      "title": "طلب الموعد | مركز السامرية الطبي",
+      "page_type": "confirmation",
+      "indexable": false
+    },
+    {
+      "file": "offer.html",
+      "title": "استشارة وتنظيف الأسنان في جدة | مركز السامرية الطبي",
+      "page_type": "offer",
+      "indexable": false
+    }
+  ]
+}
