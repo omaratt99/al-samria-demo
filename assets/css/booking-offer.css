@@ -65,6 +65,7 @@
 .offer-provider{display:flex;flex-direction:column;height:440px;overflow:hidden;border-radius:24px;background:var(--pale);direction:rtl;min-width:0}
 .offer-portrait{height:344px;flex:0 0 344px;background:linear-gradient(to bottom,var(--canvas) 29%,#e5efe9 67%,#e0ede8);display:flex;justify-content:center}
 .offer-portrait img{height:100%;width:100%;object-fit:contain}
+.offer-portrait:focus-visible{outline:3px solid var(--brand);outline-offset:-5px}
 .offer-provider-info{height:96px;box-sizing:border-box;padding:12px 24px;background:#fff;display:flex;flex-direction:column;justify-content:center;gap:4px}
 .offer-provider-info .offer-provider-name{font-size:22px;line-height:32px;font-weight:600;margin:0;color:var(--ink)}
 .offer-provider-info>p{font-size:14px;line-height:24px;font-weight:500;color:var(--muted);margin:0}
